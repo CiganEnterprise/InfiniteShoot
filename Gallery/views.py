@@ -92,6 +92,7 @@ class ChoosePreferredPhotosDetailView(LoginRequiredMixin, FormMixin, generic.Det
 
         return context
 
+
     def post(self, request, *args, **kwargs):
         self.object = self.get_object()
 
@@ -101,14 +102,14 @@ class ChoosePreferredPhotosDetailView(LoginRequiredMixin, FormMixin, generic.Det
             form_obj = form.save(commit=False)
             form_obj.client = request.user
 
-            form_obj.image = self.get_specific_image(request.user, self.kwargs['image_slug']).image
-            
+            form_obj.image = self.__get_specific_image(request.user, self.kwargs['image_slug']).image
+
             return self.form_valid(form_obj)
         else:
             return self.form_invalid(form)
 
     @staticmethod
-    def get_specific_image(user, name_id):
+    def __get_specific_image(user, name_id):
         result = ImagesClient.objects.get(client=user, name=name_id)
 
         return result
