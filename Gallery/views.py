@@ -1,3 +1,5 @@
+from PIL import Image
+from django.core.files.base import ContentFile
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect
@@ -6,7 +8,7 @@ from django.views import generic
 from django.views.generic.edit import FormMixin
 
 from .models import ImagesClient, PlatformPresentationImage
-from Gallery.form import ImageClientForm
+from Gallery.form import ClientCatalogueForm
 
 
 def gallery_view(request):
@@ -78,7 +80,7 @@ class ChoosePreferredPhotosDetailView(LoginRequiredMixin, FormMixin, generic.Det
     slug_field = 'image_slug'
     slug_url_kwarg = 'image_slug'
 
-    form_class = ImageClientForm
+    form_class = ClientCatalogueForm
 
     def get_success_url(self):
 
@@ -86,7 +88,7 @@ class ChoosePreferredPhotosDetailView(LoginRequiredMixin, FormMixin, generic.Det
 
     def get_context_data(self, **kwargs):
         context = super(ChoosePreferredPhotosDetailView, self).get_context_data(**kwargs)
-        context['form'] = ImageClientForm(initial={'post': self.object})
+        context['form'] = ClientCatalogueForm(initial={'post': self.object})
 
         return context
 
@@ -99,9 +101,17 @@ class ChoosePreferredPhotosDetailView(LoginRequiredMixin, FormMixin, generic.Det
             form_obj = form.save(commit=False)
             form_obj.client = request.user
 
+            form_obj.image = self.get_specific_image(request.user, self.kwargs['image_slug']).image
+            
             return self.form_valid(form_obj)
         else:
             return self.form_invalid(form)
+
+    @staticmethod
+    def get_specific_image(user, name_id):
+        result = ImagesClient.objects.get(client=user, name=name_id)
+
+        return result
 
     def form_valid(self, form):
         form.save()
