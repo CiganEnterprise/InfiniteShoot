@@ -81,16 +81,20 @@ class ChoosePreferredPhotosDetailView(LoginRequiredMixin, FormMixin, generic.Det
     form_class = ImageClientForm
 
     def get_success_url(self):
+
         return reverse('choose_preferred_photos')
 
     def get_context_data(self, **kwargs):
         context = super(ChoosePreferredPhotosDetailView, self).get_context_data(**kwargs)
         context['form'] = ImageClientForm(initial={'post': self.object})
+
         return context
 
     def post(self, request, *args, **kwargs):
         self.object = self.get_object()
+
         form = self.get_form()
+
         if form.is_valid():
             form_obj = form.save(commit=False)
             form_obj.client = request.user
@@ -101,4 +105,5 @@ class ChoosePreferredPhotosDetailView(LoginRequiredMixin, FormMixin, generic.Det
 
     def form_valid(self, form):
         form.save()
+
         return super(ChoosePreferredPhotosDetailView, self).form_valid(form)
