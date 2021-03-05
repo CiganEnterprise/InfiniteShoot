@@ -127,7 +127,7 @@ class ChoosePreferredPhotosDetailView(LoginRequiredMixin, FormMixin, generic.Det
                 return self.form_valid(form_obj)
 
             return self.form_invalid(form)
-        
+
         else:
             return self.form_invalid(form)
 
