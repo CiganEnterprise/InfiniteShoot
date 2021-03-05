@@ -1,8 +1,6 @@
-from PIL import Image
-from django.core.files.base import ContentFile
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from django.urls import reverse
 from django.views import generic
 from django.views.generic.edit import FormMixin
@@ -93,13 +91,28 @@ class ChoosePreferredPhotosDetailView(LoginRequiredMixin, FormMixin, generic.Det
 
         return context
 
-
     def get_number_of_instances_from_database(self, database_name, filter_name):
 
         return database_name.objects.filter(image_positioning=filter_name).count()
 
+    def validate_query(self, database_name, filter_name):
+
+        if filter_name == "Cover Image":
+            if self.get_number_of_instances_from_database(database_name, "Cover Image") == 1:
+                return False
+
+        if filter_name == "Content Image":
+            if self.get_number_of_instances_from_database(database_name, "Content Image") == 4:
+                return False
+
+        if filter_name == "Back Image":
+            if self.get_number_of_instances_from_database(database_name, "Back Image") == 1:
+                return False
+
+        return True
 
     def post(self, request, *args, **kwargs):
+
         self.object = self.get_object()
 
         form = self.get_form()
@@ -110,7 +123,11 @@ class ChoosePreferredPhotosDetailView(LoginRequiredMixin, FormMixin, generic.Det
 
             form_obj.image = self.__get_specific_image(request.user, self.kwargs['image_slug']).image
 
-            return self.form_valid(form_obj)
+            if self.validate_query(ClientCatalogue, form_obj.image_positioning):
+                return self.form_valid(form_obj)
+
+            return self.form_invalid(form)
+        
         else:
             return self.form_invalid(form)
 
@@ -140,4 +157,3 @@ def my_catalogue(request):
     }
 
     return render(request, template_name, context)
-
