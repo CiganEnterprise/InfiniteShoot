@@ -41,3 +41,29 @@ From the administration panel, the superuser is able to check messages and set t
 set them to accepted or refused. This can be seen in the screenshot below:
 
 ![Website main page](infiniteshoot_documentation/picture4.jpg)
+
+##### BLOG
+
+The Posts table from the Blog Database includes all the articles which can be seen in the platform at 
+the blog section. From this part of the administration system you can actualise, change or write articles 
+very easy through a basic form.
+
+##### Checking the articles from the blog system
+
+![Website main page](infiniteshoot_documentation/picture5.jpg)
+
+##### Adding a new article
+
+![Website main page](infiniteshoot_documentation/picture6.jpg)
+
+##### The way it looks in the UI
+
+![Website main page](infiniteshoot_documentation/picture7.jpg)
+
+##### At the moment you click on the article it opens a detail view with all the details
+
+![Website main page](infiniteshoot_documentation/picture8.jpg)
+
+##### Also, for making the user job simpler, I also implemented a search engine through the articles.
+
+![Website main page](infiniteshoot_documentation/picture9.jpg)
