@@ -67,3 +67,31 @@ very easy through a basic form.
 ##### Also, for making the user job simpler, I also implemented a search engine through the articles.
 
 ![Website main page](infiniteshoot_documentation/picture9.JPG)
+
+##### CONTACT
+
+This database represents the direct contact to any user who visits the site. It contains 
+two main tables. The Contact table contains messages who are send to the business by a visitor who wants
+to offer some feedback, ask something about the business or pretty much say anything he wants.
+The message is sent through a form in the UI, more precisely in the Contact section.
+
+##### This is how the form looks like in the UI
+
+![Website main page](infiniteshoot_documentation/picture10.JPG)
+
+##### This is how the administrator sees the messages
+
+![Website main page](infiniteshoot_documentation/picture11.JPG)
+
+In the right side it can be seen the READ field, in the moment you click on a message and
+you read it, you also have a check box below. If you check that check box the message
+will appear as seen.
+
+##### This is how the message looks when you open it
+
+![Website main page](infiniteshoot_documentation/picture12.JPG)
+
+The newsletter table works the same way, there is a form in the newsletter section 
+which you fill and the data is stored in the table.
+
+![Website main page](infiniteshoot_documentation/picture13.JPG)
