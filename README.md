@@ -21,3 +21,18 @@ the app.
 The databases can be seen below in the administration panel of the webapp:
 
 ![Website main page](infiniteshoot_documentation/picture2.jpg)
+
+##### APPOINTMENT
+
+The appointments table includes all the appointments who are requested by the user using a form inside 
+the webapp. It includes fields such as phone number, full name and desired date for the photo shoot to happen.
+The system is pretty simple, the user is making an appointment for a photo shoot, and because it is assumed 
+that the freelancer or business owner already has an appointment system, the app just saves the data into a database so that
+the freelancer just has to connect to the person to talk about details such as where should be the photo shoot
+or if the date is right. This scenario seems very real because the process of creating interoperability
+between the app and the appointment system would be very time-consuming and money-consuming. That being said,
+this solution (interoperability) will pretty much be avoided by both the programmer and freelancer or business owner.
+
+##### How does the form looks in the user view
+
+![Website main page](infiniteshoot_documentation/picture3.jpg)
