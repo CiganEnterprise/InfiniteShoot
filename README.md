@@ -36,3 +36,8 @@ this solution (interoperability) will pretty much be avoided by both the program
 ##### How does the form looks in the user view
 
 ![Website main page](infiniteshoot_documentation/picture3.jpg)
+
+From the administration panel, the superuser is able to check messages and set them as seen or not and also
+set them to accepted or refused. This can be seen in the screenshot below:
+
+![Website main page](infiniteshoot_documentation/picture4.jpg)
