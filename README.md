@@ -8,7 +8,7 @@ such as authentication, album builder or personal gallery view.
 
 ## Backend
 
-In the backend I have 9 databases each of them very important for the functionality and infrastructure of 
+In the backend I have 5 databases each of them very important for the functionality and infrastructure of 
 the app.
 
 * APPOINTMENT which includes only one table, Appointments
