@@ -30,7 +30,7 @@ The system is pretty simple, the user is making an appointment for a photo shoot
 that the freelancer or business owner already has an appointment system, the app just saves the data into a database so that
 the freelancer just has to connect to the person to talk about details such as where should be the photo shoot
 or if the date is right. This scenario seems very real because the process of creating interoperability
-between the app and the appointment system would be very time-consuming and money-consuming. That being said,
+between the app, and the appointment system would be very time-consuming and money-consuming. That being said,
 this solution (interoperability) will pretty much be avoided by both the programmer and freelancer or business owner.
 
 ##### How does the form looks in the user view
@@ -71,7 +71,7 @@ very easy through a basic form.
 ##### CONTACT
 
 This database represents the direct contact to any user who visits the site. It contains 
-two main tables. The Contact table contains messages who are send to the business by a visitor who wants
+two main tables. The Contact table contains messages who are sent to the business by a visitor who wants
 to offer some feedback, ask something about the business or pretty much say anything he wants.
 The message is sent through a form in the UI, more precisely in the Contact section.
 
@@ -172,7 +172,16 @@ SQL Based Database (sqlite3).
 
 # Future Development
 
+A list with possible and helpful updates that the system may need:
 
+*  Better UX. It is always a good idea to update the UX so that it could be more user-friendly
+   and simpler to the user.
+ 
+* Integration with an appointment system for saving more time consumed on calling the client and negotiating
+the right time.
+
+* The ability to also get a response from the business or freelancer about the programmed photo shoot. ( When it happens and
+, and where ).
 
 ## Requirements
 
