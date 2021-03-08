@@ -136,6 +136,20 @@ company, etc.
 
 ![Website main page](infiniteshoot_documentation/picture17.JPG)
 
-The way images looks in the view is the same here as in the platform presentation images. You can click on any
+The way images looks in the view is the same here as in the platform presentation images. You as user, can click on any
 image and check it closer.
 
+##### Client catalogues
+
+In this table is stored the customizable catalogues for all the users who are in the platform. 
+The customization system works simply through a form where the user can choose through different personal images
+from the photo shoot. After that, he can exactly pick where he wants the image to be, on the cover, in the content 
+or on the back of the album.
+
+##### This is how the user picks where the image should be
+
+![Website main page](infiniteshoot_documentation/picture18.JPG)
+
+##### This is how the views looks for a user who picks an image from personal images
+
+![Website main page](infiniteshoot_documentation/picture19.JPG)
