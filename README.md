@@ -83,7 +83,7 @@ The message is sent through a form in the UI, more precisely in the Contact sect
 
 ![Website main page](infiniteshoot_documentation/picture11.JPG)
 
-In the right side it can be seen the READ field, in the moment you click on a message and
+On the right side it can be seen the READ field, at the moment you click on a message, and
 you read it, you also have a check box below. If you check that check box the message
 will appear as seen.
 
@@ -92,6 +92,6 @@ will appear as seen.
 ![Website main page](infiniteshoot_documentation/picture12.JPG)
 
 The newsletter table works the same way, there is a form in the newsletter section 
-which you fill and the data is stored in the table.
+which you fill, and the data is stored in the table.
 
 ![Website main page](infiniteshoot_documentation/picture13.JPG)
