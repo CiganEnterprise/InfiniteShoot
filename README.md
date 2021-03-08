@@ -119,3 +119,7 @@ administration panel.
 ##### This is how the added images looks in the views
 
 ![Website main page](infiniteshoot_documentation/picture15.JPG)
+
+##### This is how you view a singular image
+
+![Website main page](infiniteshoot_documentation/picture16.JPG)
