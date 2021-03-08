@@ -95,3 +95,27 @@ The newsletter table works the same way, there is a form in the newsletter secti
 which you fill, and the data is stored in the table.
 
 ![Website main page](infiniteshoot_documentation/picture13.JPG)
+
+##### GALLERY
+
+This database represents de core field of the webapp. Here is where the images which the business wants
+to provide as models appear, here is where the images from the photo shoot are stored and lately listed
+in the webapp where the user can check them out. Here is also the place where the album is made by choosing
+the pictures you want to provide.
+
+##### Platform presentation images
+
+This table represents images which the business wants to provide as models for future customers or current
+customers who are already enrolled for a photo shoot. The table contains only 3 but highly important fields:
+Name of the image, The image, and the column where it should be placed in the app. The fact that the admin
+is able to position the image where he wants in the page is an important thing so that he is always able
+to customise with a specific ease the whole content wherever he wants. This whole process is made from the 
+administration panel.
+
+##### This is how the adding image form looks like
+
+![Website main page](infiniteshoot_documentation/picture14.JPG)
+
+##### This is how the added images looks in the views
+
+![Website main page](infiniteshoot_documentation/picture15.JPG)
