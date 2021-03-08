@@ -153,3 +153,14 @@ or on the back of the album.
 ##### This is how the views looks for a user who picks an image from personal images
 
 ![Website main page](infiniteshoot_documentation/picture19.JPG)
+
+##### This is how the customized album looks
+
+![Website main page](infiniteshoot_documentation/picture20.JPG)
+
+## Frontend
+
+The webapp is 100% responsive, and it includes basic animations realised with CSS3, Javascript and Jquery.
+
+![Website main page](infiniteshoot_documentation/picture21.JPG) ![Website main page](infiniteshoot_documentation/picture22.JPG)
+![Website main page](infiniteshoot_documentation/picture23.JPG)
