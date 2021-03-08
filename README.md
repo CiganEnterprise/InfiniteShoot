@@ -164,3 +164,44 @@ The webapp is 100% responsive, and it includes basic animations realised with CS
 
 ![Website main page](infiniteshoot_documentation/picture21.JPG) ![Website main page](infiniteshoot_documentation/picture22.JPG)
 ![Website main page](infiniteshoot_documentation/picture23.JPG)
+
+## Technologies
+
+The technologies I've used for this project are HTML5, CSS3, Bootstrap, JavaScript, Jquery, Python Django, 
+SQL Based Database (sqlite3).
+
+## Requirements
+
+* You should have python3 and django (version 3.0.8 or bigger) installed.
+
+## Setup
+
+* Download this repo
+* After downloading this repo you have to get a SECRET_KEY from here -> https://djecrety.ir/ and paste
+it in the settings.py file from InfiniteShoot folder. (InfiniteShoot/InfiniteShoot/settings.py)
+ 
+![Website main page responsive](infiniteshoot_documentation/picture24.JPG)
+
+* Open cmd or terminal in InfiniteShoot folder and type 
+```
+    python3 manage.py makemigrations
+```
+
+then 
+
+```
+    python3 manage.py migrate
+```
+
+after that create an admin
+
+```
+    python3 manage.py createsuperuser
+```
+
+run the app
+
+```
+    python3 manage.py runserver
+```
+* Enjoy
