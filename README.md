@@ -170,6 +170,10 @@ The webapp is 100% responsive, and it includes basic animations realised with CS
 The technologies I've used for this project are HTML5, CSS3, Bootstrap, JavaScript, Jquery, Python Django, 
 SQL Based Database (sqlite3).
 
+# Future Development
+
+
+
 ## Requirements
 
 * You should have python3 and django (version 3.0.8 or bigger) installed.
