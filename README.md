@@ -123,3 +123,19 @@ administration panel.
 ##### This is how you view a singular image
 
 ![Website main page](infiniteshoot_documentation/picture16.JPG)
+
+##### Images Clients
+
+Images Clients represents the table where are stored all the images for all clients. From here, the system
+will take the specific images for a user and query them into a template view. This query is also present
+in another view from where the user will pick the images he wants for the album.
+The table contains fields such as name of the image, the targeted client, the image, thoughts by the
+company, etc. 
+
+##### This is how the data looks in the database table
+
+![Website main page](infiniteshoot_documentation/picture17.JPG)
+
+The way images looks in the view is the same here as in the platform presentation images. You can click on any
+image and check it closer.
+
